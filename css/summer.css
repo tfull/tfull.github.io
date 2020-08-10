@@ -43,9 +43,21 @@ article {
 
 footer {
     clear: both;
-    background-color: var(--color-blue);
+    background-image: linear-gradient(180deg,
+        var(--color-sky) 5%,
+        var(--color-blue) 5%,
+        var(--color-blue) 8%,
+        var(--color-sky) 8%,
+        var(--color-sky) 11%,
+        var(--color-blue) 11%,
+        var(--color-blue) 14%,
+        var(--color-sky) 14%,
+        var(--color-sky) 17%,
+        var(--color-blue) 17%
+    );
     margin: 0px;
     padding: 10px;
+    border-top: solid 3px white;
 }
 
 header {
@@ -80,7 +92,7 @@ aside nav a {
     text-decoration: none;
     color: var(--color-blue);
     display: block;
-    background-image: linear-gradient(135deg, white 85%, black 85%, black 87%, white 87%, white 90%, black 90%, black 92%, white 92%, white 95%, black 95%);
+    background-image: linear-gradient(135deg, white 85%, var(--color-sky) 85%, var(--color-sky) 87%, white 87%, white 90%, var(--color-sky) 90%, var(--color-sky) 92%, white 92%, white 95%, var(--color-sky) 95%);
 }
 
 aside nav a:hover {
@@ -101,8 +113,9 @@ h1 {
 
 article h2 {
     margin: 0;
-    padding: 10px;
+    padding: 0.5rem;
     text-align: center;
+    font-size: 1.4rem;
     background-color: var(--color-blue);
     border: double 8px var(--color-yellow);
     color: var(--color-sky);
@@ -131,4 +144,75 @@ aside hr {
 
 nav div {
     text-align: center;
+}
+
+.external_link {
+    margin: 1rem 0;
+}
+
+.external_link ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.external_link ul li {
+    margin: 0 20%;
+    padding: 0;
+}
+
+.external_link ul li a {
+    text-decoration: none;
+    padding: 0.5rem;
+    border: solid 1px var(--color-blue);
+    display: block;
+    background-color: white;
+    color: var(--color-blue);
+}
+
+.external_link ul li a:hover {
+    color: var(--color-yellow);
+    background-color: var(--color-blue);
+    animation-name: fadein;
+    animation-duration: 0.8s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.external_link ul li a:not(:last-child) {
+    border-bottom: none;
+}
+
+.gallery {
+    position: relative;
+}
+
+.gallery img {
+    display: block;
+    position: absolute;
+}
+
+.creative .link a {
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    margin: 0.5rem 10% 0.5rem 40%;
+    text-decoration: none;
+    color: var(--color-blue);
+    background-color: white;
+    border: double 5px var(--color-blue);
+}
+
+.creative .link a:hover {
+    color: var(--color-yellow);
+    background-color: var(--color-blue);
+    border-color: white;
 }
