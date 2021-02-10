@@ -13,36 +13,14 @@ html {
 }
 
 body {
-    width: 980px;
-    margin: 0 auto;
     background-color: var(--color-sky);
 }
 
 aside {
-    width: 222px;
-    float: left;
-    padding: 8px;
     background-color: var(--color-light-blue);
-    border-right: solid 2px white;
-    padding-bottom: 32767px;
-    margin-bottom: -32767px;
-}
-
-article {
-    float: right;
-    width: 720px;
-    padding: 10px;
-    padding-bottom: 32767px;
-    margin-bottom: -32767px;
-}
-
-#middle {
-    min-height: 100%;
-    overflow: hidden;
 }
 
 footer {
-    clear: both;
     background-image: linear-gradient(180deg,
         var(--color-sky) 5%,
         var(--color-blue) 5%,
@@ -55,43 +33,23 @@ footer {
         var(--color-sky) 17%,
         var(--color-blue) 17%
     );
-    margin: 0px;
-    padding: 10px;
-    border-top: solid 3px white;
 }
 
 header {
-    margin: 0;
-    padding: 2rem;
     background-color: var(--color-blue);
     background-image: linear-gradient(45deg, var(--color-sky) 25%, transparent 25%, transparent 75%, var(--color-sky) 75%),
                 linear-gradient(45deg, var(--color-sky) 25%, transparent 25%, transparent 75%, var(--color-sky) 75%);
     background-size: 1.0rem 1.0rem;
     background-position: 0 0, 0.5rem 0.5rem;
-    border-bottom: solid 3px white;
 }
 
-aside nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
 
 aside nav li {
-    margin: 0;
-    padding: 0;
     border: solid 1px var(--color-blue);
 }
 
-aside nav li:not(:last-child) {
-    border-bottom: none;
-}
-
 aside nav a {
-    padding: 0.5rem;
-    text-decoration: none;
     color: var(--color-blue);
-    display: block;
     background-image: linear-gradient(135deg, white 85%, var(--color-sky) 85%, var(--color-sky) 87%, white 87%, white 90%, var(--color-sky) 90%, var(--color-sky) 92%, white 92%, white 95%, var(--color-sky) 95%);
 }
 
@@ -102,70 +60,27 @@ aside nav a:hover {
 
 h1 {
     font-family: "MS P Gothic", "Hiragino Pro Gothic";
-    margin: 0;
-    text-align: center;
     color: var(--color-yellow);
     background-color: var(--color-blue);
-    padding: 1rem;
-    font-size: 2rem;
     border: double 5px var(--color-sky);
 }
 
 article h2 {
-    margin: 0;
-    padding: 0.5rem;
-    text-align: center;
-    font-size: 1.4rem;
     background-color: var(--color-blue);
     border: double 8px var(--color-yellow);
     color: var(--color-sky);
 }
 
 footer div {
-    text-align: center;
     color: var(--color-yellow);
 }
 
-.face_icon {
-    display: block;
-    margin: auto;
-}
-
-.profile {
-    text-align: center;
-}
-
 aside hr {
-    height: 3px;
-    border-width: 0;
-    border-style: solid;
     background-image: linear-gradient(90deg, transparent 5%, var(--color-blue) 25%, var(--color-blue) 75%, transparent 95%);
 }
 
-nav div {
-    text-align: center;
-}
-
-.external_link {
-    margin: 1rem 0;
-}
-
-.external_link ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-.external_link ul li {
-    margin: 0 20%;
-    padding: 0;
-}
-
 .external_link ul li a {
-    text-decoration: none;
-    padding: 0.5rem;
     border: solid 1px var(--color-blue);
-    display: block;
     background-color: white;
     color: var(--color-blue);
 }
@@ -174,38 +89,11 @@ nav div {
     color: var(--color-yellow);
     background-color: var(--color-blue);
     animation-name: fadein;
-    animation-duration: 0.8s;
+    animation-duration: 1.2s;
 }
 
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.external_link ul li a:not(:last-child) {
-    border-bottom: none;
-}
-
-.gallery {
-    position: relative;
-}
-
-.gallery img {
-    display: block;
-    position: absolute;
-}
 
 .creative .link a {
-    display: block;
-    padding: 0.5rem;
-    text-align: center;
-    margin: 0.5rem 10% 0.5rem 40%;
-    text-decoration: none;
     color: var(--color-blue);
     background-color: white;
     border: double 5px var(--color-blue);

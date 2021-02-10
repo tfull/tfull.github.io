@@ -4,3 +4,154 @@ html {
     margin: 0;
     padding: 0;
 }
+
+body {
+    width: 980px;
+    margin: 0 auto;
+}
+
+header {
+    margin: 0;
+    padding: 2rem;
+    border-bottom: solid 3px white;
+}
+
+#middle {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+aside {
+    width: 222px;
+    float: left;
+    padding: 8px;
+    border-right: solid 2px white;
+    padding-bottom: 32767px;
+    margin-bottom: -32767px;
+}
+
+article {
+    float: right;
+    width: 720px;
+    padding: 10px;
+    padding-bottom: 32767px;
+    margin-bottom: -32767px;
+}
+
+
+footer {
+    clear: both;
+    margin: 0px;
+    padding: 10px;
+    border-top: solid 3px white;
+}
+
+aside nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside nav li {
+    margin: 0;
+    padding: 0;
+}
+
+aside nav li:not(:last-child) {
+    border-bottom: none;
+}
+
+aside nav a {
+    padding: 0.5rem;
+    text-decoration: none;
+    display: block;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+article h2 {
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+footer div {
+    text-align: center;
+}
+
+aside .face_icon {
+    display: block;
+    margin: auto;
+}
+
+aside .profile {
+    text-align: center;
+}
+
+aside hr {
+    height: 3px;
+    border-width: 0;
+    border-style: solid;
+}
+
+nav div {
+    text-align: center;
+}
+
+.external_link {
+    margin: 1rem 0;
+}
+
+.external_link ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.external_link ul li {
+    margin: 0 20%;
+    padding: 0;
+}
+
+.external_link ul li a {
+    text-decoration: none;
+    padding: 0.5rem;
+    display: block;
+}
+
+.external_link ul li a:not(:last-child) {
+    border-bottom: none;
+}
+
+.gallery {
+    position: relative;
+}
+
+.gallery img {
+    display: block;
+    position: absolute;
+}
+
+.creative .link a {
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    margin: 0.5rem 10% 0.5rem 40%;
+    text-decoration: none;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
