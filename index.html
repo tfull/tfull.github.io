@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/base.css" type="text/css" />
   <link rel="shortcut icon" href="favicon.ico" />
-  <title>TOP - T.Furukawa</title>
+  <title data-ja="TOP - T.Furukawa" data-en="TOP - T.Furukawa">TOP - T.Furukawa</title>
 </head>
 <body>
   <header>
@@ -18,65 +18,57 @@
       </div>
       <hr />
       <nav>
-        <div>他のページ</div>
+        <div lang="ja">他のページ</div>
+        <div lang="en">Links</div>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="career.html">職歴</a></li>
-          <li><a href="activity.html">活動記録</a></li>
-          <li><a href="contact.html">ご連絡</a></li>
+          <li><a href="contact.html"><span lang="ja">ご連絡</span><span lang="en">Contact</span></a></li>
         </ul>
         <div>Language</div>
-        <ul>
-          <li><a href="en_index.html">English</a></li>
+        <ul class="lang">
+          <li><button type="button" data-lang="ja" aria-pressed="true">日本語</button></li>
+          <li><button type="button" data-lang="en" aria-pressed="false">English</button></li>
         </ul>
       </nav>
     </aside>
     <article>
-      <h2>基本情報</h2>
+      <h2><span lang="ja">基本情報</span><span lang="en">Profile</span></h2>
       <dl>
-        <dt>出身</dt>
-        <dd>日本 広島県</dd>
-        <dt>生年</dt>
-        <dd>1991年</dd>
-        <dt>専門</dt>
-        <dd>情報理工学（修士）</dd>
-        <dt>職業</dt>
-        <dd>ソフトウェアエンジニア</dd>
-        <dd>機械学習エンジニア</dd>
-        <dt>趣味</dt>
-        <dd>音楽制作</dd>
-        <dd>お絵かき</dd>
-        <dd>ボードゲーム</dd>
-        <dd>料理</dd>
-        <dd>Nintendo Switch</dd>
+        <dt><span lang="ja">出身</span><span lang="en">Location</span></dt>
+        <dd><span lang="ja">日本 広島県</span><span lang="en">Japan</span></dd>
+        <dt><span lang="ja">生年</span><span lang="en">Birth Year</span></dt>
+        <dd><span lang="ja">1991年</span><span lang="en">1991</span></dd>
+        <dt><span lang="ja">専門</span><span lang="en">Major</span></dt>
+        <dd><span lang="ja">情報理工学（修士）</span><span lang="en">Information Science and Technology (Master)</span></dd>
+        <dt><span lang="ja">職業</span><span lang="en">Job</span></dt>
+        <dd><span lang="ja">ソフトウェアエンジニア</span><span lang="en">Software Engineer</span></dd>
+        <dd><span lang="ja">機械学習エンジニア</span><span lang="en">Machine Learning Engineer</span></dd>
       </dl>
-      <h2>自身のサービス</h2>
+      <h2><span lang="ja">自身のサービス</span><span lang="en">My Site</span></h2>
       <div class="external_link">
         <ul>
-          <li><a href="http://playground.tsfurukawa.com" target="_blank">T.Furukawaの遊び場</a></li>
-          <li><a href="https://boku-repe.com" target="_blank">ぼくレピ（レシピサイト）</a></li>
+          <li><a href="apps/latticetd/"><span lang="ja">Lattice TD(iOS 向けタワーディフェンス)</span><span lang="en">Lattice TD (tower defense for iOS)</span></a></li>
         </ul>
       </div>
-      <h2>SNSなどの外部サービス</h2>
+      <h2><span lang="ja">SNSなどの外部サービス</span><span lang="en">External Links (SNS etc.)</span></h2>
       <div class="external_link">
         <ul>
           <li><a href="https://twitter.com/tfull_tf" target="_blank">Twitter</a></li>
           <li><a href="https://github.com/tfull" target="_blank">GitHub</a></li>
-          <li><a href="http://tfull.hatenablog.jp" target="_blank">はてなブログ</a></li>
-          <li><a href="https://qiita.com/tfull_tf" target="_blank">Qiita</a></li>
+          <li lang="ja"><a href="http://tfull.hatenablog.jp" target="_blank">はてなブログ</a></li>
+          <li lang="ja"><a href="https://qiita.com/tfull_tf" target="_blank">Qiita</a></li>
           <li><a href="https://www.youtube.com/channel/UCGz6kesTqG3-s_1_VIhP9Ew" target="_blank">YouTube (Music)</a></li>
           <li><a href="https://www.youtube.com/channel/UC51ZAMHnG3MSuSYUvTi2nlw" target="_blank">YouTube (Programming)</a></li>
           <li><a href="https://www.pixiv.net/users/17877969" target="_blank">Pixiv</a></li>
-          <li><a href="https://www.instagram.com/tfull_tf/" target="_blank">Instagram</a></li>
-          <li><a href="https://soundcloud.com/user-375579182" target="_blank">SoundCloud</a></li>
         </ul>
       </div>
     </article>
   </div>
   <footer>
     <div>
-      (C) T.Furukawa 2013 - 2021
+      (C) T.Furukawa 2026
     </div>
   </footer>
+  <script src="lang.js"></script>
 </body>
 </html>

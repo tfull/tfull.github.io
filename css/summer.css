@@ -48,12 +48,15 @@ aside nav li {
     border: solid 1px var(--color-blue);
 }
 
-aside nav a {
+aside nav a,
+aside nav button {
     color: var(--color-blue);
     background-image: linear-gradient(135deg, white 85%, var(--color-sky) 85%, var(--color-sky) 87%, white 87%, white 90%, var(--color-sky) 90%, var(--color-sky) 92%, white 92%, white 95%, var(--color-sky) 95%);
 }
 
-aside nav a:hover {
+aside nav a:hover,
+aside nav button:hover,
+aside nav button[aria-pressed="true"] {
     color: white;
     background-image: linear-gradient(135deg, var(--color-blue) 85%, var(--color-yellow) 85%, var(--color-yellow) 87%, var(--color-blue) 87%, var(--color-blue) 90%, var(--color-yellow) 90%, var(--color-yellow) 92%, var(--color-blue) 92%, var(--color-blue) 95%, var(--color-yellow) 95%);
 }
@@ -90,17 +93,4 @@ aside hr {
     background-color: var(--color-blue);
     animation-name: fadein;
     animation-duration: 1.2s;
-}
-
-
-.creative .link a {
-    color: var(--color-blue);
-    background-color: white;
-    border: double 5px var(--color-blue);
-}
-
-.creative .link a:hover {
-    color: var(--color-yellow);
-    background-color: var(--color-blue);
-    border-color: white;
 }

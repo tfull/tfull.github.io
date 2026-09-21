@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/base.css" type="text/css" />
   <link rel="shortcut icon" href="favicon.ico" />
-  <title>ご連絡 - T.Furukawa</title>
+  <title data-ja="ご連絡 - T.Furukawa" data-en="Contact - T.Furukawa">ご連絡 - T.Furukawa</title>
 </head>
 <body>
   <header>
-    <h1>ご連絡</h1>
+    <h1><span lang="ja">ご連絡</span><span lang="en">Contact</span></h1>
   </header>
   <div id="middle">
     <aside>
@@ -18,27 +18,28 @@
       </div>
       <hr />
       <nav>
-        <div>他のページ</div>
+        <div lang="ja">他のページ</div>
+        <div lang="en">Links</div>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="career.html">職歴</a></li>
-          <li><a href="activity.html">活動記録</a></li>
-          <li><a href="#">ご連絡</a></li>
-       </ul>
+          <li><a href="#"><span lang="ja">ご連絡</span><span lang="en">Contact</span></a></li>
+        </ul>
         <div>Language</div>
-        <ul>
-          <li><a href="en_contact.html">English</a></li>
+        <ul class="lang">
+          <li><button type="button" data-lang="ja" aria-pressed="true">日本語</button></li>
+          <li><button type="button" data-lang="en" aria-pressed="false">English</button></li>
         </ul>
       </nav>
     </aside>
     <article>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdZdFshcT9vEcDRngwEgRGW2EuGLAOdNgZG8HkJrBUgdyvu3A/viewform?embedded=true" width="640" height="439" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdZdFshcT9vEcDRngwEgRGW2EuGLAOdNgZG8HkJrBUgdyvu3A/viewform?embedded=true" width="640" height="439" frameborder="0" marginheight="0" marginwidth="0"><span lang="ja">読み込んでいます…</span><span lang="en">Loading…</span></iframe>
     </article>
   </div>
   <footer>
     <div>
-      (C) T.Furukawa 2013 - 2022
+      (C) T.Furukawa 2026
     </div>
   </footer>
+  <script src="lang.js"></script>
 </body>
 </html>

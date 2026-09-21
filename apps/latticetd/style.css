@@ -1,0 +1,187 @@
+/* Lattice TD のアプリページ共通スタイル。ゲーム本体の配色(#10131a の暗い盤面に細い線)に寄せてある。 */
+:root {
+  --bg: #10131a;
+  --panel: #171c26;
+  --line: #2a3242;
+  --text: #dfe4ee;
+  --muted: #8f9ab0;
+  --accent: #6fb3ff;
+  --accent-2: #d4c27a;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 16px 48px;
+}
+
+/* ヘッダー(アイコン + タイトル + 小ナビ) */
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 0 16px;
+  border-bottom: 1px solid var(--line);
+}
+.head img {
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  flex: none;
+}
+.head h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.head .sub {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.head .grow { flex: 1; }
+
+.lang {
+  display: flex;
+  gap: 4px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px;
+  font-size: 0.85rem;
+}
+.lang button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  padding: 4px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  font: inherit;
+  white-space: nowrap;
+}
+.lang button[aria-pressed="true"] {
+  background: var(--panel);
+  color: var(--text);
+}
+
+nav.crumbs {
+  padding: 12px 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+nav.crumbs > * + *::before {
+  content: "/";
+  color: var(--line);
+  margin: 0 8px;
+}
+
+/* ヒーロー画像 */
+.hero {
+  margin: 20px 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 2868 / 1320;
+  background: var(--panel) url("hero.jpg") center / cover no-repeat;
+}
+
+h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 36px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--line);
+}
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 24px 0 8px;
+}
+p, li { font-size: 0.97rem; }
+ul { padding-left: 1.3em; }
+
+.lead { font-size: 1.05rem; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+.cards li {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+.cards strong { display: block; margin-bottom: 4px; color: var(--accent-2); }
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+.links a {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--text);
+}
+.links a:hover { border-color: var(--accent); text-decoration: none; }
+.links a.disabled { color: var(--muted); pointer-events: none; }
+
+dl.faq dt {
+  font-weight: 600;
+  margin-top: 18px;
+}
+dl.faq dd {
+  margin: 4px 0 0;
+  color: var(--text);
+}
+
+.note {
+  background: var(--panel);
+  border-left: 3px solid var(--accent);
+  padding: 10px 14px;
+  border-radius: 0 8px 8px 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+footer {
+  margin-top: 48px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.85rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+
+/* 言語切り替え。html[lang] に合わせて片方だけ表示する。JS が無ければ両方出る。 */
+html[lang="ja"] [lang="en"] { display: none; }
+html[lang="en"] [lang="ja"] { display: none; }
